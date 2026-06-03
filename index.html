@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Neha Bhoyar — AI/ML Engineer, Data Analyst & Software Developer. Final-year CSE student with 8.85 CGPA building data-driven solutions." />
+  <meta name="keywords" content="Neha Bhoyar, AI ML Engineer, Data Analyst, Python, Power BI, Machine Learning, Portfolio" />
+  <meta name="author" content="Neha Bhoyar" />
+  <title>Neha Bhoyar | AI/ML Engineer · Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">NB</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <span class="loader-text">Initializing...</span>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>NB<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">☀</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#achievements" class="mobile-link">Achievements</a>
+      <a href="#github" class="mobile-link">GitHub</a>
+      <a href="#resume" class="mobile-link">Resume</a>
+      <a href="#certifications" class="mobile-link">Certs</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-tag reveal-up">
+          <span class="dot"></span> Available for Internships & Full-time Roles
+        </div>
+        <h1 class="hero-name reveal-up delay-1">Neha<br/><span class="name-accent">Bhoyar</span></h1>
+        <div class="hero-title reveal-up delay-2">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-bio reveal-up delay-3">
+          Passionate Computer Science Engineering student focused on AI, Machine Learning, Data Analytics, and Software Development. Building data-driven solutions that transform information into actionable insights.
+        </p>
+        <div class="hero-buttons reveal-up delay-4">
+          <a href="#resume" class="btn btn-primary">View Resume</a>
+          <a href="resume.pdf" download class="btn btn-secondary">↓ Download CV</a>
+          <a href="https://github.com/NehaBhoyar15" target="_blank" class="btn btn-ghost">GitHub</a>
+          <a href="https://www.linkedin.com/in/neha-bhoyar-411722373/" target="_blank" class="btn btn-ghost">LinkedIn</a>
+        </div>
+        <div class="hero-stats reveal-up delay-5">
+          <div class="stat">
+            <span class="stat-num">8.85</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal-right delay-2">
+        <div class="profile-ring">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+          <div class="profile-image">
+            <div class="profile-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="45" r="22" fill="url(#pg1)"/>
+                <ellipse cx="60" cy="100" rx="35" ry="25" fill="url(#pg1)"/>
+                <defs>
+                  <linearGradient id="pg1" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#a855f7"/>
+                    <stop offset="100%" stop-color="#06b6d4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>NB</span>
+            </div>
+          </div>
+          <div class="orbit-badge ob1">Python</div>
+          <div class="orbit-badge ob2">ML</div>
+          <div class="orbit-badge ob3">SQL</div>
+          <div class="orbit-badge ob4">Power BI</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="about-lead">I'm a final-year B.Tech Computer Science student at <strong>GHRIET, Nagpur</strong>, passionate about turning raw data into real-world impact through AI and analytics.</p>
+          <p>With an <strong>8.85 CGPA</strong> and hands-on experience across Python, SQL, and Power BI, I bridge the gap between data engineering and business insight. As Class Representative, I've honed leadership, communication, and collaborative problem-solving.</p>
+          <p>I'm actively seeking opportunities where I can apply machine learning and data analytics skills to solve meaningful challenges.</p>
+          <div class="about-cta">
+            <a href="mailto:bhoyarneha815@gmail.com" class="btn btn-primary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="info-card glass">
+            <div class="info-card-icon">🎓</div>
+            <div>
+              <div class="info-card-title">B.Tech CSE</div>
+              <div class="info-card-sub">Final Year · CGPA 8.85</div>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="info-card-icon">🏅</div>
+            <div>
+              <div class="info-card-title">Class Representative</div>
+              <div class="info-card-sub">Leadership & Communication</div>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="info-card-icon">🤖</div>
+            <div>
+              <div class="info-card-title">AI/ML Enthusiast</div>
+              <div class="info-card-sub">Scikit-learn · Deep Learning</div>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="info-card-icon">📊</div>
+            <div>
+              <div class="info-card-title">Data Analytics</div>
+              <div class="info-card-sub">Python · SQL · Power BI</div>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="info-card-icon">📍</div>
+            <div>
+              <div class="info-card-title">Location</div>
+              <div class="info-card-sub">Wardha, Maharashtra, India</div>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="info-card-icon">💡</div>
+            <div>
+              <div class="info-card-title">Problem Solver</div>
+              <div class="info-card-sub">Analytical · Creative Thinking</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category glass reveal-up">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⌨️</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQL</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Java</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up delay-1">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">📊</span>
+            <h3>Data Analytics</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Pandas</span>
+            <span class="stag">NumPy</span>
+            <span class="stag">Matplotlib</span>
+            <span class="stag">Seaborn</span>
+            <span class="stag accent">Power BI</span>
+            <span class="stag">Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up delay-2">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag accent">Scikit-learn</span>
+            <span class="stag">Data Preprocessing</span>
+            <span class="stag">EDA</span>
+            <span class="stag">ML Fundamentals</span>
+            <span class="stag">Feature Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up delay-3">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML/CSS</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>PHP</span><span>60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal-up delay-1">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠</span>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag accent">Git</span>
+            <span class="stag accent">GitHub</span>
+            <span class="stag">VS Code</span>
+            <span class="stag">MySQL</span>
+            <span class="stag">Jupyter</span>
+            <span class="stag">Google Colab</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+
+      <!-- Featured Project -->
+      <div class="featured-project glass reveal-up">
+        <div class="featured-badge">★ Featured Project</div>
+        <div class="featured-grid">
+          <div class="featured-visual">
+            <div class="project-mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content">
+                <div class="mockup-chart">
+                  <div class="chart-bar" style="--h:60%"></div>
+                  <div class="chart-bar" style="--h:85%"></div>
+                  <div class="chart-bar" style="--h:45%"></div>
+                  <div class="chart-bar" style="--h:72%"></div>
+                  <div class="chart-bar" style="--h:90%"></div>
+                  <div class="chart-bar" style="--h:55%"></div>
+                  <div class="chart-bar" style="--h:78%"></div>
+                </div>
+                <div class="mockup-kpis">
+                  <div class="kpi">
+                    <div class="kpi-val">↑ 24%</div>
+                    <div class="kpi-label">Revenue</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi-val">1.2K</div>
+                    <div class="kpi-label">Customers</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi-val">₹ 4.8M</div>
+                    <div class="kpi-label">Sales</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-info">
+            <h3 class="project-title">E-Commerce Sales &amp; Customer Analytics Dashboard</h3>
+            <p class="project-desc">An end-to-end analytics platform built with Python, SQL, and Power BI to analyze sales performance, customer behavior, and profitability. Integrates data engineering, statistical analysis, and business intelligence.</p>
+            <div class="project-features">
+              <span>✓ Data Cleaning (Pandas)</span>
+              <span>✓ EDA &amp; SQL Analysis</span>
+              <span>✓ KPI Tracking</span>
+              <span>✓ Customer Segmentation</span>
+              <span>✓ Revenue &amp; Profit Analysis</span>
+              <span>✓ Interactive Power BI Dashboard</span>
+            </div>
+            <div class="project-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">SQL</span>
+              <span class="ptag">Power BI</span>
+              <span class="ptag">Pandas</span>
+              <span class="ptag">NumPy</span>
+              <span class="ptag">Matplotlib</span>
+              <span class="ptag">Seaborn</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/NehaBhoyar15/E-Commerce-Sales-Customer-Analytics-Dashboard" target="_blank" class="btn btn-primary">View on GitHub →</a>
+              <a href="#" class="btn btn-ghost">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects -->
+      <div class="projects-row">
+        <div class="project-card glass reveal-up delay-1">
+          <div class="project-card-header">
+            <span class="project-icon">📦</span>
+            <div class="project-card-links">
+              <a href="#" class="icon-link" title="GitHub">⇗</a>
+            </div>
+          </div>
+          <h3>Inventory Management System</h3>
+          <p>Full-stack inventory system using PHP and MySQL for managing stock records, supplier info, and automated reporting.</p>
+          <div class="project-feature-list">
+            <span>· Inventory Tracking</span>
+            <span>· Supplier Management</span>
+            <span>· Stock Monitoring</span>
+            <span>· Automated Reports</span>
+          </div>
+          <div class="project-tags">
+            <span class="ptag">PHP</span>
+            <span class="ptag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal-up delay-2 future-card">
+          <div class="project-card-header">
+            <span class="project-icon">🔮</span>
+          </div>
+          <div class="future-label">Coming Soon</div>
+          <h3>Next AI/ML Project</h3>
+          <p>An upcoming machine learning project leveraging deep learning and advanced analytics. Watch this space.</p>
+          <div class="future-tags">
+            <span class="ptag">Deep Learning</span>
+            <span class="ptag">TensorFlow</span>
+            <span class="ptag">NLP</span>
+          </div>
+          <div class="future-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Achievements</span>
+        <h2 class="section-title">Milestones</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass reveal-up">
+          <div class="ach-number">8.85</div>
+          <div class="ach-title">CGPA</div>
+          <div class="ach-sub">B.Tech Computer Science Engineering</div>
+        </div>
+        <div class="achievement-card glass reveal-up delay-1">
+          <div class="ach-icon">🏅</div>
+          <div class="ach-title">Class Representative</div>
+          <div class="ach-sub">Elected CR — leadership, organization, and peer representation</div>
+        </div>
+        <div class="achievement-card glass reveal-up delay-2">
+          <div class="ach-icon">📊</div>
+          <div class="ach-title">Analytics Project</div>
+          <div class="ach-sub">Full end-to-end E-Commerce Dashboard with Power BI & Python</div>
+        </div>
+        <div class="achievement-card glass reveal-up delay-3">
+          <div class="ach-icon">🤝</div>
+          <div class="ach-title">Leadership</div>
+          <div class="ach-sub">Managed cross-functional teams and academic events</div>
+        </div>
+        <div class="achievement-card glass reveal-up delay-1">
+          <div class="ach-icon">🧠</div>
+          <div class="ach-title">Problem Solver</div>
+          <div class="ach-sub">Strong analytical skills in data-driven decision making</div>
+        </div>
+        <div class="achievement-card glass reveal-up delay-2">
+          <div class="ach-icon">📈</div>
+          <div class="ach-title">Data Projects</div>
+          <div class="ach-sub">Multiple real-world analytics and ML projects delivered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ GITHUB ═══════════════════════ -->
+  <section id="github" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / GitHub</span>
+        <h2 class="section-title">Open Source Activity</h2>
+      </div>
+      <div class="github-layout">
+        <div class="github-profile-card glass reveal-left">
+          <div class="gh-avatar">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="currentColor" style="color:var(--accent-purple)">
+              <path d="M50 5C25.1 5 5 25.1 5 50c0 19.9 12.9 36.8 30.8 42.8 2.3.4 3.1-1 3.1-2.2v-7.7c-12.6 2.7-15.3-6.1-15.3-6.1-2.1-5.3-5.1-6.7-5.1-6.7-4.1-2.8.3-2.7.3-2.7 4.6.3 7 4.7 7 4.7 4.1 7 10.7 5 13.3 3.8.4-3 1.6-5 2.9-6.1-10.1-1.1-20.7-5-20.7-22.4 0-5 1.8-9 4.7-12.2-.5-1.2-2-5.7.5-11.9 0 0 3.8-1.2 12.5 4.7 3.6-1 7.5-1.5 11.4-1.5 3.9 0 7.8.5 11.4 1.5 8.7-5.9 12.5-4.7 12.5-4.7 2.5 6.2 1 10.7.5 11.9 2.9 3.2 4.7 7.2 4.7 12.2 0 17.4-10.6 21.2-20.7 22.3 1.6 1.4 3.1 4.2 3.1 8.4v12.5c0 1.2.8 2.7 3.1 2.2C82.1 86.8 95 69.9 95 50 95 25.1 74.9 5 50 5z"/>
+            </svg>
+          </div>
+          <div class="gh-name">NehaBhoyar15</div>
+          <div class="gh-bio">AI/ML Engineer · Data Analyst · CSE Student</div>
+          <div class="gh-stats">
+            <div class="gh-stat"><span class="gh-stat-val">2+</span><span>Repos</span></div>
+            <div class="gh-stat"><span class="gh-stat-val">↑</span><span>Active</span></div>
+            <div class="gh-stat"><span class="gh-stat-val">🔥</span><span>Building</span></div>
+          </div>
+          <a href="https://github.com/NehaBhoyar15" target="_blank" class="btn btn-primary gh-btn">Visit Profile →</a>
+        </div>
+
+        <div class="github-right reveal-right">
+          <div class="contrib-section glass">
+            <div class="contrib-header">
+              <span>Contribution Activity</span>
+              <span class="contrib-year">2024–2025</span>
+            </div>
+            <div class="contrib-grid" id="contrib-grid"></div>
+            <div class="contrib-legend">
+              <span>Less</span>
+              <div class="legend-squares">
+                <div class="ls ls0"></div>
+                <div class="ls ls1"></div>
+                <div class="ls ls2"></div>
+                <div class="ls ls3"></div>
+                <div class="ls ls4"></div>
+              </div>
+              <span>More</span>
+            </div>
+          </div>
+
+          <div class="repo-cards">
+            <div class="repo-card glass">
+              <div class="repo-card-header">
+                <span class="repo-icon">📁</span>
+                <span class="repo-lang python">Python</span>
+              </div>
+              <div class="repo-name">E-Commerce-Analytics-Dashboard</div>
+              <div class="repo-desc">End-to-end analytics with Python, SQL & Power BI</div>
+              <div class="repo-meta">
+                <span>⭐ Analytics</span>
+                <span>🔀 Data Science</span>
+              </div>
+            </div>
+            <div class="repo-card glass">
+              <div class="repo-card-header">
+                <span class="repo-icon">📁</span>
+                <span class="repo-lang php">PHP</span>
+              </div>
+              <div class="repo-name">Inventory-Management-System</div>
+              <div class="repo-desc">PHP + MySQL stock and supplier management system</div>
+              <div class="repo-meta">
+                <span>⭐ Web Dev</span>
+                <span>🔀 Database</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ RESUME ═══════════════════════ -->
+  <section id="resume" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Resume</span>
+        <h2 class="section-title">Curriculum Vitae</h2>
+      </div>
+      <div class="resume-layout">
+        <div class="resume-preview glass reveal-left">
+          <div class="resume-doc">
+            <div class="resume-page">
+              <div class="resume-page-header">
+                <div class="rph-name">NEHA BHOYAR</div>
+                <div class="rph-title">AI/ML Engineer · Data Analyst · Software Developer</div>
+                <div class="rph-contact">bhoyarneha815@gmail.com · Wardha, Maharashtra</div>
+              </div>
+              <div class="resume-section-block">
+                <div class="rsb-title">EDUCATION</div>
+                <div class="rsb-line"></div>
+                <div class="rsb-content">B.Tech CSE · GHRIET Nagpur · CGPA: 8.85</div>
+              </div>
+              <div class="resume-section-block">
+                <div class="rsb-title">SKILLS</div>
+                <div class="rsb-line"></div>
+                <div class="rsb-content">Python · SQL · Power BI · Pandas · Scikit-learn · Java</div>
+              </div>
+              <div class="resume-section-block">
+                <div class="rsb-title">PROJECTS</div>
+                <div class="rsb-line"></div>
+                <div class="rsb-content">E-Commerce Analytics Dashboard · Inventory Management System</div>
+              </div>
+              <div class="resume-section-block">
+                <div class="rsb-title">CERTIFICATIONS</div>
+                <div class="rsb-line"></div>
+                <div class="rsb-content">Data Analytics · Machine Learning · Python Fundamentals</div>
+              </div>
+            </div>
+          </div>
+          <div class="resume-badge">
+            <span>✓ ATS Friendly</span>
+          </div>
+        </div>
+        <div class="resume-info reveal-right">
+          <h3>Ready to Download</h3>
+          <p>My resume is crafted for both ATS systems and human recruiters — clean formatting, keyword-optimized, and packed with quantifiable achievements.</p>
+          <div class="resume-highlights">
+            <div class="rh-item"><span class="rh-check">✓</span> ATS Optimized</div>
+            <div class="rh-item"><span class="rh-check">✓</span> 1-Page Format</div>
+            <div class="rh-item"><span class="rh-check">✓</span> Keyword Rich</div>
+            <div class="rh-item"><span class="rh-check">✓</span> Updated 2025</div>
+          </div>
+          <div class="resume-btns">
+            <a href="resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
+            <a href="resume.pdf" download class="btn btn-secondary">↓ Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CERTIFICATIONS ═══════════════════════ -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 / Certifications</span>
+        <h2 class="section-title">Credentials</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card glass reveal-up">
+          <div class="cert-logo">📜</div>
+          <div class="cert-info">
+            <div class="cert-name">Data Analytics with Python</div>
+            <div class="cert-issuer">— Add Issuer Here</div>
+            <div class="cert-date">2024</div>
+          </div>
+          <a href="#" class="cert-link">View ↗</a>
+        </div>
+        <div class="cert-card glass reveal-up delay-1">
+          <div class="cert-logo">📜</div>
+          <div class="cert-info">
+            <div class="cert-name">Machine Learning Fundamentals</div>
+            <div class="cert-issuer">— Add Issuer Here</div>
+            <div class="cert-date">2024</div>
+          </div>
+          <a href="#" class="cert-link">View ↗</a>
+        </div>
+        <div class="cert-card glass reveal-up delay-2">
+          <div class="cert-logo">📜</div>
+          <div class="cert-info">
+            <div class="cert-name">SQL for Data Science</div>
+            <div class="cert-issuer">— Add Issuer Here</div>
+            <div class="cert-date">2024</div>
+          </div>
+          <a href="#" class="cert-link">View ↗</a>
+        </div>
+        <div class="cert-card glass reveal-up delay-3">
+          <div class="cert-logo">📜</div>
+          <div class="cert-info">
+            <div class="cert-name">Power BI Essentials</div>
+            <div class="cert-issuer">— Add Issuer Here</div>
+            <div class="cert-date">2025</div>
+          </div>
+          <a href="#" class="cert-link">View ↗</a>
+        </div>
+        <div class="cert-card glass reveal-up delay-1 cert-add">
+          <div class="cert-logo">➕</div>
+          <div class="cert-info">
+            <div class="cert-name">Add Your Certification</div>
+            <div class="cert-issuer">Update with real credentials</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">08 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info reveal-left">
+          <h3>Open to Opportunities</h3>
+          <p>Whether you have an internship opportunity, a full-time role, a project collaboration, or just want to say hi — my inbox is always open!</p>
+          <div class="contact-links">
+            <a href="mailto:bhoyarneha815@gmail.com" class="contact-item glass">
+              <span class="ci-icon">✉</span>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-val">bhoyarneha815@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/NehaBhoyar15" target="_blank" class="contact-item glass">
+              <span class="ci-icon">⌥</span>
+              <div>
+                <div class="ci-label">GitHub</div>
+                <div class="ci-val">NehaBhoyar15</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/neha-bhoyar-411722373/" target="_blank" class="contact-item glass">
+              <span class="ci-icon">in</span>
+              <div>
+                <div class="ci-label">LinkedIn</div>
+                <div class="ci-val">neha-bhoyar-411722373</div>
+              </div>
+            </a>
+            <div class="contact-item glass">
+              <span class="ci-icon">📍</span>
+              <div>
+                <div class="ci-label">Location</div>
+                <div class="ci-val">Wardha, Maharashtra, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap glass reveal-right">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Regarding..." />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">
+        <span class="logo-bracket">&lt;</span>NB<span class="logo-bracket">/&gt;</span>
+      </span>
+      <span class="footer-copy">Designed &amp; built by Neha Bhoyar · 2025</span>
+      <div class="footer-links">
+        <a href="https://github.com/NehaBhoyar15" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/neha-bhoyar-411722373/" target="_blank">LinkedIn</a>
+        <a href="mailto:bhoyarneha815@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
